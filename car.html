@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-2探索车型-轿车</title>
+</head>
+<style>
+  * {
+    /* 去除所有元素内边距外边距和列表样式化 */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+  }
+
+  .container {
+    /* 1容器样式 */
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    /* 容器水平居中 */
+    background: black;
+  }
+
+  #top {
+    /* 2头部样式 */
+    width: 1200px;
+    height: 100px;
+    margin: auto auto;
+  }
+
+  #top_center {
+    /* 头部中间 */
+    width: 140px;
+    height: 100px;
+    margin: auto auto;
+    position: relative;
+  }
+
+  #logo-img {
+    /* 头部图片 */
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+  .hover-list {
+    /* 头部里面 隐藏的ul样式 */
+    position: absolute;
+    width: 1195px;
+    height: 100px;
+    background: black;
+    top: 90px;
+    /* 列表位置距离顶部 */
+    left: -526px;
+    z-index: 1000;
+    /* 列表覆盖在其他元素之上 */
+    display: none;
+  }
+
+  .hover-list li {
+    /* ul里面元素样式 */
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-left: 8%;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+  }
+
+  .hover-list li ul {
+    /* ul li里面的ul样式 */
+    width: 200px;
+    height: 500px;
+    display: none;
+    position: relative;
+  }
+
+  .hover-list li:hover ul {
+    /* 鼠标放到ul li 上面显示的ul样式 */
+    display: block;
+    background: black;
+    position: absolute;
+    top: 10px;
+  }
+
+  li {
+    /* 列表元素里面没有任何样式 */
+    list-style-type: none;
+  }
+
+  .left {
+    /* 3容器左边样式 */
+    width: 200px;
+    height: 800px;
+  }
+
+  .left ul {
+    /* 容器左边里面的ul无序列表样式 */
+    display: inline-block;
+    margin-top: 60%;
+  }
+
+  .left ul li {
+    /* 容器左边里面的ul无序列表元素样式 */
+    text-align: center;
+    list-style: none;
+    padding: 15px;
+    /*元素上下间距 */
+    margin-left: 20px;
+    /* 元素左边边距 */
+  }
+
+  .right {
+    /* 4容器右边样式 */
+    width: 1000px;
+    height: 760px;
+    margin: -800px 200px;
+  }
+
+  #right_S {
+    width: 410px;
+    height: 350px;
+  }
+
+  #right_E {
+    width: 590px;
+    height: 350px;
+    margin-left: 607px;
+    margin-top: 40px;
+  }
+
+  #right_C {
+    width: 650px;
+    height: 350px;
+    margin-left: 200px;
+  }
+
+  #right_A {
+    width: 350px;
+    height: 350px;
+    margin-left: 851px;
+    margin-top: -352px;
+  }
+
+  .bottom {
+    /* 5容器底部样式 */
+    width: 1200px;
+    height: 120px;
+    background: black;
+    margin: auto auto;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="top">
+      <div id="top_center">
+        <a href="index.html"><img src="images/logo.jpg" id="logo-img"></a>
+        <ul class="hover-list">
+          <li>探索车型
+            <!-- 探索车型里面嵌套无序列表 -->
+            <ul style="margin-left: -40px;">
+              <li> <a href="car.html">轿车</a></li>
+              <li> <a href="suv.html">SUV</a></li>
+              <li> <a href="">MPV</a></li>
+              <li> <a href="">纯电车型</a></li>
+              <li> <a href="">插电式混合动力</a></li>
+            </ul>
+          </li>
+          <li>官方商城
+            <!--官方商城里面嵌套无序列表 -->
+            <ul style="margin-left: -40px;">
+              <li> <a href="">购新车</a></li>
+              <li> <a href="">看二手</a></li>
+              <li> <a href="">找售后</a></li>
+              <li> <a href="">买互联</a></li>
+            </ul>
+          </li>
+          <li>车主服务
+            <!-- 车主服务里面嵌套无序列表 -->
+            <ul style="margin-left: -40px;">
+              <li> <a href="">服务政策査询</a></li>
+              <li> <a href="">保养维修及救援</a></li>
+              <li> <a href="">选装配件及精品</a></li>
+              <li> <a href="">纯电车型服务</a></li>
+            </ul>
+
+          </li>
+          <li>科技创新
+            <!-- 科技创新里面嵌套无序列表 -->
+            <ul style="margin-left: -40px;">
+              <li> <a href="">品牌天地</a></li>
+              <li> <a href="">可持续发展</a></li>
+              <li> <a href="">品牌互动</a></li>
+              <li> <a href="">客户承诺</a></li>
+              <li> <a href="">加入奔驰</a></li>
+            </ul>
+          </li>
+          <li><a href="reserveDrive.html">预约试驾</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="left">
+      <ul>
+        <li><a href="car.html">轿车</a></li>
+        <li><a href="#">SUV</a></li>
+        <li><a href="#">轿跑车&敞篷跑车</a></li>
+        <li><a href="#">MPV</a></li>
+        <li><a href="#">纯电车型</a></li>
+        <li><a href="#">插电式混合动力</a></li>
+        <li><a href="#">AMG</a></li>
+        <li><a href="#">MAYBACH</a></li>
+        <li><a href="index.html">返回</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div id="right_S">
+        <a href="car-S.html">
+          <img src="images/carS.jpg" onmouseover="this.src='images/carS1.jpg'" onmouseout="this.src='images/carS.jpg'">
+        </a>
+      </div>
+    </div>
+    <div id="right_E">
+      <a href="car-E.html"><img src="images/carE.jpg"></a>
+    </div>
+    <div id="right_C">
+      <a href="car-C.html">
+        <img src="images/carC.jpg" onmouseover="this.src='images/carC1.jpg'" onmouseout="this.src='images/carC.jpg'">
+      </a>
+    </div>
+    <div id="right_A">
+      <a href="car-A.html">
+        <img src="images/carA.jpg" onmouseover="this.src='images/carA1.jpg'" onmouseout="this.src='images/carA.jpg'">
+      </a>
+    </div>
+  </div>
+  <div class="bottom">
+    <p style="text-align: center;"><br>隐私条款&nbsp;|&nbsp; 客户关怀热线&nbsp;|&nbsp; 网站地图&nbsp;|&nbsp; 法律声明&nbsp;|&nbsp;
+      环保信息查询&nbsp;|&nbsp;
+      供应商平台&nbsp;|&nbsp; 加入奔驰<br>
+      @梅赛德斯-奔驰版权所有&nbsp;&nbsp; 京ICP备09046804号-2&nbsp;&nbsp; 京公网安备11010502035702号 <br>
+      增值电信业务经营许可证:合字B2-20210077
+    </p>
+  </div>
+
+  </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let image = document.getElementById('logo-img');
+    let hoverList = document.querySelector('.hover-list');
+    let timeoutId = null;// 用于存储setTimeout的ID，以便可以清除它 
+    image.addEventListener('mouseover', function () {
+      hoverList.style.display = 'block'; // 鼠标移动到图片上时显示列表  
+      clearTimeout(timeoutId);
+      // 设置新的延迟隐藏
+      timeoutId = setTimeout(function () {
+        if (!image.matches(':hover')) { // 确保鼠标确实离开了图片  
+          hoverList.style.display = 'none';
+        }
+      }, 3000); // 延迟时间设置为1000毫秒（1秒） 
+    });
+  });
+  // 清除之前的延迟隐藏（如果有的话）  
+
+  image.addEventListener('mouseleave', function () {
+    // 这里不需要做任何事情，因为延迟隐藏已经在mouseover事件中设置了  
+  });
+</script>
+
+</html>

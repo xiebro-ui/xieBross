@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3预约试驾</title>
+</head>
+<style>
+  * {
+    /* 去除所有元素内边距外边距和列表样式化 */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /* color: #fefefe; */
+  }
+
+  #father {
+    /* 容器样式 */
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    /* background: black; */
+    position: relative;
+  }
+
+  #top {
+    /* 头部样式 */
+    width: 1200px;
+    height: 100px;
+    margin: auto auto;
+    background-color: #000000;
+    /* background-color: aqua; */
+  }
+
+  #top_center {
+    /* 头部中间 */
+    width: 140px;
+    height: 100px;
+    margin: auto auto;
+    /* background: blue */
+  }
+
+  #top_img {
+    /* 头部图片 */
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(images/onlineOrder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+  #center_right {
+    position: absolute;
+    right: 50px;
+    width: 500px;
+    height: 450px;
+    overflow-y: auto;
+  }
+
+  .bottom {
+    width: 1200px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+  }
+
+  form div {
+    margin-bottom: 10px;
+
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  button[type="submit"] {
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  button[type="button"] {
+    background-color: #dbdb3b;
+    color: #ffffff;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    font-size: 40px;
+    color: #000000;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #DriveForm {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+
+  }
+
+  #weChatPay {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  #alipay {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+  }
+</style>
+</head>
+
+<body>
+  <div id="father">
+    <div id="top">
+      <div id="top_center"> <a href="index.html"><img src="images/logo.jpg" id="top_img"></a></div>
+    </div>
+    <div id="center">
+      <h1>线上订购</h1>
+      <div id="center_right">
+        <form style="margin-left: 30px;">
+          <div>
+            <label for="carSeries">请选择车型规格:</label>
+            <select id="carSeries">
+              <option value="">标准轴距E级车运动版 2023年款</option>
+              <option value="">标准轴距E级车运动版 2023年款</option>
+              <option value="">标准轴距E级车运动版 2023年款</option>
+              <!-- 这里可以添加具体的车系列表 -->
+            </select>
+          </div>
+          <div>
+            <label for="carSeries">请选择外观颜色:</label>
+            <select id="carSeries">
+              <option value="">MANUFAKTUR 远峰灰色</option>
+              <option value="">绿砾石银色</option>
+              <option value="">曜岩黑色</option>
+              <!-- 这里可以添加具体的地点列表 -->
+            </select>
+          </div>
+          <div>
+            <label for="carSeries">请选择内饰颜色:</label>
+            <select id="carSeries">
+              <option value="">黑色</option>
+              <option value="">玛奇朵米色/黑色</option>
+              <option value="">桐咖棕色</option>
+
+              <!-- 这里可以添加具体的运营商列表 -->
+            </select>
+          </div>
+          <div>
+            <label>请选择轮毂样式</label>
+            <select>
+              <option>48.3 厘米(19 英AMG 5辐轻合寸)金车轮</option>
+            </select>
+          </div>
+          <div>
+            <label>请选择配备</label>
+            <select>
+              <option>标准配置+行车记录仪</option>
+              <option>标准配置+MBUX智能人机交互系统实景穿越导航</option>
+              <option>标准配置+璀璨星环格栅</option>
+            </select>
+          </div>
+          <div>
+            <label>经销商</label>
+            <select>
+              <option>北京波士畅达汽车销售服务有限公司</option>
+            </select>
+          </div>
+          <div style="position: relative;">
+            <label>请选择你的付款方式</label>
+            <div id="weChatPay"><img src="images/weChatPay .jpg" width="100%"></div>
+            <div id="alipay"><img src="images/alipay.jpg"></div>
+            <label>意向金*¥99.00随时可退</label>
+
+          </div>
+          <button type="submit">去支付</button>
+          <input type="checkbox" style="bottom: 200px;">我仔细阅读了并接受所附的 隐私条款
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p style="color:white;"><br>隐私条款&nbsp;|&nbsp; 客户关怀热线&nbsp;|&nbsp; 网站地图&nbsp;|&nbsp; 法律声明&nbsp;|&nbsp;
+        环保信息查询&nbsp;|&nbsp;
+        供应商平台&nbsp;|&nbsp; 加入奔驰<br>
+        @梅赛德斯-奔驰版权所有&nbsp;&nbsp; 京ICP备09046804号-2&nbsp;&nbsp; 京公网安备11010502035702号 <br>
+        增值电信业务经营许可证:合字B2-20210077
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>

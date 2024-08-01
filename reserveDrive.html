@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3预约试驾</title>
+</head>
+<style>
+  * {
+    /* 去除所有元素内边距外边距和列表样式化 */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #bab5b5;
+  }
+
+  #father {
+    /* 容器样式 */
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    background: black;
+    position: relative;
+  }
+
+  #top {
+    /* 头部样式 */
+    width: 1200px;
+    height: 100px;
+    margin: auto auto;
+    /* background-color: aqua; */
+  }
+
+  #top_center {
+    /* 头部中间 */
+    width: 140px;
+    height: 100px;
+    margin: auto auto;
+    /* background: blue */
+  }
+
+  #top_img {
+    /* 头部图片 */
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(images/reserve.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+  .bottom {
+    width: 1200px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+  }
+
+  form div {
+    margin-bottom: 10px;
+
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  button[type="submit"] {
+    background-color: #4421c1;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  button[type="button"] {
+    background-color: #dbdb3b;
+    color: #ffffff;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    font-size: 40px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #DriveForm {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+
+  }
+</style>
+</head>
+
+<body>
+  <div id="father">
+    <div id="top">
+      <div id="top_center"> <a href="index.html"><img src="images/logo.jpg" id="top_img"></a></div>
+    </div>
+    <div id="center">
+      <h1 style="color: white;">预约试驾</h1>
+      <form id="DriveForm">
+        <div>
+          <label for="carSeries">请选择心仪车系:</label>
+          <select id="carSeries">
+            <option value="">轿车-A级</option>
+            <option value="">轿车-C级</option>
+            <option value="">轿车-E级</option>
+            <option value="">轿车-S级</option>
+            <option value="">SUV-GLA</option>
+            <option value="">SUV-GLB</option>
+            <option value="">SUV-GLC</option>
+            <option value="">SUV-GLE</option>
+            <option value="">SUV-GLS</option>
+
+            <!-- 这里可以添加具体的车系列表 -->
+          </select>
+        </div>
+        <div>
+          <label for="carSeries">请选择地点:</label>
+          <select id="carSeries">
+            <option value="">北京</option>
+            <option value="">天津</option>
+            <option value="">杭州</option>
+            <option value="">上海</option>
+            <option value="">长沙</option>
+            <option value="">广州</option>
+            <option value="">苏州</option>
+            <!-- 这里可以添加具体的地点列表 -->
+          </select>
+        </div>
+        <div>
+          <label for="carSeries">请选择运营商:</label>
+          <select id="carSeries">
+            <option value="">北京波士畅达汽车销售服务有限公司销售服务 <br>5.0售后服务 5.0累计评价数 4800+</option>
+            <option value="">上海宝利德汽车有限公司销售服务<br> 5.0售后服务 5.0累计评价数 10500+</option>
+            <option value="">天津波士信达汽车销售服务有限公司销售服务<br> 5.0售后服务 5.0累计评价数 8200+</option>
+            <option value=""></option>
+            <!-- 这里可以添加具体的运营商列表 -->
+          </select>
+        </div>
+        <div>
+          <label for="surname">请输入您的姓氏:</label>
+          <input type="text" id="surname" required>
+        </div>
+        <div>
+          <label for="phone">请输入您的手机号:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div>
+          <label for="verificationCode">请输入短信验证码:</label>
+          <input type="text" id="verificationCode" required>
+          <button type="button" onclick="sendVerificationCode()">发送验证码</button>
+        </div>
+        <a href="login.html"><button type="submit">提交预约</button></a>
+
+        <input type="checkbox" style="bottom: 200px;">我仔细阅读了并接受所附的 隐私条款
+      </form>
+
+    </div>
+    <div class="bottom">
+      <p style="color:white;"><br>隐私条款&nbsp;|&nbsp; 客户关怀热线&nbsp;|&nbsp; 网站地图&nbsp;|&nbsp; 法律声明&nbsp;|&nbsp;
+        环保信息查询&nbsp;|&nbsp;
+        供应商平台&nbsp;|&nbsp; 加入奔驰<br>
+        @梅赛德斯-奔驰版权所有&nbsp;&nbsp; 京ICP备09046804号-2&nbsp;&nbsp; 京公网安备11010502035702号 <br>
+        增值电信业务经营许可证:合字B2-20210077
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3预约试驾</title>
+</head>
+<style>
+  * {
+    /* 去除所有元素内边距外边距和列表样式化 */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+  }
+
+  #father {
+    /* 容器样式 */
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto;
+    background: black;
+    position: relative;
+  }
+
+  #top {
+    /* 头部样式 */
+    width: 1200px;
+    height: 100px;
+    margin: auto auto;
+    /* background-color: aqua; */
+  }
+
+  #top_center {
+    /* 头部中间 */
+    width: 140px;
+    height: 100px;
+    margin: auto auto;
+    /* background: blue */
+  }
+
+  #top_img {
+    /* 头部图片 */
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    background-image: url(images/E2show.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+  }
+
+  #center:hover {
+    background-image: url(images/E1show.jpg);
+  }
+
+  .btn {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+  }
+
+  .btn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .bottom {
+    width: 1200px;
+    height: 120px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+  }
+
+  h1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-size: 40px;
+  }
+
+  #p1 {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    font-size: 20px;
+
+  }
+
+  #btn {
+    position: absolute;
+    top: 250px;
+    left: 90px;
+  }
+</style>
+</head>
+
+<body>
+  <div id="father">
+    <div id="top">
+      <div id="top_center"> <a href="index.html"><img src="images/logo.jpg" id="top_img"></a></div>
+    </div>
+    <div id="center">
+      <h1>长轴距E级轿车</h1>
+      <p id="p1">全面颠覆想象的长轴距E级轿车，在与生俱来的豪华之上<br>将智能融入每一寸肌理，让豪华与智能，从此默契如一</p>
+
+      <div id="btn">
+        <a href="reserveDrive.html" class="btn">预约试驾</a>
+        <a href="onlineOrder.html" class="btn">在线预订</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p style=" text-align: center;"><br>隐私条款&nbsp;|&nbsp; 客户关怀热线&nbsp;|&nbsp; 网站地图&nbsp;|&nbsp; 法律声明&nbsp;|&nbsp;
+        环保信息查询&nbsp;|&nbsp;
+        供应商平台&nbsp;|&nbsp; 加入奔驰<br>
+        @梅赛德斯-奔驰版权所有&nbsp;&nbsp; 京ICP备09046804号-2&nbsp;&nbsp; 京公网安备11010502035702号 <br>
+        增值电信业务经营许可证:合字B2-20210077
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-1-1探索车型-轿车-E级</title>
+  <style>
+    * {
+      /* 去除所有元素内边距外边距和列表样式化 */
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      list-style: none;
+      color: #fff;
+    }
+
+    #father {
+      /* 容器样式 */
+      width: 1200px;
+      height: 900px;
+      margin: 0 auto;
+      background: black;
+    }
+
+    #top {
+      /* 2头部样式 */
+      width: 1200px;
+      height: 100px;
+      margin: auto auto;
+    }
+
+    #top_center {
+      /* 头部中间 */
+      width: 140px;
+      height: 100px;
+      margin: auto auto;
+      position: relative;
+    }
+
+    #logo-img {
+      /* 头部图片 */
+      max-width: 100%;
+      max-height: 100%;
+
+    }
+
+    .hover-list {
+      /* 头部里面 隐藏的ul样式 */
+      position: absolute;
+      width: 1195px;
+      height: 100px;
+      background: black;
+      top: 90px;
+      left: -526px;
+      z-index: 500;
+      display: none;
+    }
+
+    .hover-list li {
+      /* ul里面元素样式 */
+      float: left;
+      width: 100px;
+      text-align: center;
+      margin-left: 8%;
+      height: 80px;
+      line-height: 80px;
+      position: relative;
+    }
+
+    .hover-list li ul {
+      /* ul li里面的ul样式 */
+      width: 200px;
+      height: 500px;
+      display: none;
+      position: relative;
+    }
+
+    .hover-list li:hover ul {
+      /* 鼠标放到ul li 上面显示的ul样式 */
+      display: block;
+      background: black;
+      position: absolute;
+      top: 10px;
+    }
+
+
+    li {
+      /* 列表元素里面没有任何样式 */
+      list-style-type: none;
+    }
+
+    .left {
+      /* 3容器左边样式 */
+      width: 200px;
+      height: 800px;
+    }
+
+    .left ul {
+      /* 容器左边里面的ul无序列表样式 */
+      display: inline-block;
+      margin-top: 60%;
+    }
+
+    .left ul li {
+      /* 容器左边里面的ul无序列表元素样式 */
+      text-align: center;
+      list-style: none;
+      padding: 15px;
+      /*元素上下间距 */
+      margin-left: 20px;
+      /* 元素左边边距 */
+    }
+
+    .right {
+      width: 1000px;
+      height: 760px;
+      margin: -800px 200px;
+      background-color: rgb(36, 36, 36);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .bottom {
+      width: 1200px;
+      height: 120px;
+      background: black;
+      margin: 800px auto;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    table {
+      width: 1000px;
+      height: 600px;
+      margin-bottom: -60px;
+      margin-left: 20px;
+    }
+
+    #E {
+      width: 100px;
+      height: 90px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #return {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      transition: all;
+    }
+
+    td {
+      width: 300px;
+      height: 300px;
+    }
+
+    td img {
+      max-width: 100%;
+      /* 图片最大宽度为单元格宽度 */
+      max-height: 100%;
+      /* 图片最大高度为单元格高度 */
+      width: auto;
+      /* 保持图片的原始宽高比 */
+      height: auto;
+      /* 保持图片的原始宽高比 */
+    }
+
+    hr {
+      border: 1px solid rgb(179, 171, 171);
+      width: 950px;
+      position: absolute;
+      bottom: 10%;
+    }
+
+    p {
+      color: rgb(179, 171, 171);
+      font-size: 15px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  </head>
+
+  <body>
+    <div id="father">
+      <div id="top">
+        <div id="top_center">
+          <a href="index.html"><img src="images/logo.jpg" id="logo-img"></a>
+          <ul class="hover-list">
+            <li>探索车型
+              <!-- 探索车型里面嵌套无序列表 -->
+              <ul style="margin-left: -40px;">
+                <li> <a href="car.html">轿车</a></li>
+                <li> <a href="suv.html">SUV</a></li>
+                <li> <a href="">MPV</a></li>
+                <li> <a href="">纯电车型</a></li>
+                <li> <a href="">插电式混合动力</a></li>
+              </ul>
+            </li>
+            <li>官方商城
+              <!--官方商城里面嵌套无序列表 -->
+              <ul style="margin-left: -40px;">
+                <li> <a href="">购新车</a></li>
+                <li> <a href="">看二手</a></li>
+                <li> <a href="">找售后</a></li>
+                <li> <a href="">买互联</a></li>
+              </ul>
+            </li>
+            <li>车主服务
+              <!-- 车主服务里面嵌套无序列表 -->
+              <ul style="margin-left: -40px;">
+                <li> <a href="">服务政策査询</a></li>
+                <li> <a href="">保养维修及救援</a></li>
+                <li> <a href="">选装配件及精品</a></li>
+                <li> <a href="">纯电车型服务</a></li>
+              </ul>
+
+            </li>
+            <li>科技创新
+              <!-- 科技创新里面嵌套无序列表 -->
+              <ul style="margin-left: -40px;">
+                <li> <a href="">品牌天地</a></li>
+                <li> <a href="">可持续发展</a></li>
+                <li> <a href="">品牌互动</a></li>
+                <li> <a href="">客户承诺</a></li>
+                <li> <a href="">加入奔驰</a></li>
+              </ul>
+            </li>
+            <li><a href="reserveDrive.html">预约试驾</a></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="left">
+        <ul>
+          <li><a href="#">轿车SUV</a></li>
+          <li><a href="#">轿跑车&敞篷跑车</a></li>
+          <li><a href="#">MPV</a></li>
+          <li><a href="#">纯电车型</a></li>
+          <li><a href="#">插电式混合动力</a></li>
+          <li><a href="#">AMG</a></li>
+          <li><a href="#">MAYBACH</a></li>
+          <li><a href="index.html">返回</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <span id="E"><img src="images/E_logo.jpg" alt=""></span>
+        <span id="return">
+          <a href="car.html"><img src="images/return.jpg"></a>
+        </span>
+        <table style="margin-top: 30px;  ;">
+          <tr>
+            <td><a href="E1show.html"><img src="images/E1.jpg"></a></td>
+            <td><img src="images/E2.jpg" alt=""></td>
+            <td><img src="images/E3.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td style="position: relative;">
+              <div style="position:absolute;top: 10%;left: 0;">
+                <p style="font-size: 25px;color: #fff;">长轴距E级轿车</p><br>
+                <p>
+                  厂商建议零售价<br>
+                  ¥44.72万起</p>
+              </div>
+            </td>
+            <td style="position: relative;">
+              <div style="position:absolute;top: 10%;left: 0;">
+                <p style="font-size: 25px; color: #fff;">长轴距E级运动轿车</p><br>
+                <p>
+                  厂商建议零售价<br>
+                  ¥44.72万起</p>
+              </div>
+            </td>
+            <td style="position: relative;">
+              <div style="position:absolute;top: 10%;left: 0;">
+                <p style="font-size: 25px;color: #fff;">全新标准轴距E级车运动版</p><br>
+                <p>
+                  厂商建议零售价<br>
+                  ¥45.92万起</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <hr>
+      </div>
+      <div class="bottom">
+        <p>
+          产品（含具体配置、相关细节等）以经销商展示、销售的适用于中国大陆的具体车型及产品为准。<br>
+          本产品网页中提及的所有价格（包括整车、配件、金融产品等）均为厂商建议零售价格。<br>
+          厂商建议零售价格仅为建议，不具有任何约束力。<br>
+          具体的零售交易价格、产品配置及交易细节请与相关授权经销商协商确定。<br>
+          更多详情，敬请莅临梅赛德斯-奔驰当地授权经销商，或致电400-818-1188 <br>
+        </p>
+      </div>
+
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let image = document.getElementById('logo-img');
+      let hoverList = document.querySelector('.hover-list');
+      let timeoutId = null;// 用于存储setTimeout的ID，以便可以清除它 
+      image.addEventListener('mouseover', function () {
+        hoverList.style.display = 'block'; // 鼠标移动到图片上时显示列表  
+        clearTimeout(timeoutId);
+        // 设置新的延迟隐藏
+        timeoutId = setTimeout(function () {
+          if (!image.matches(':hover')) { // 确保鼠标确实离开了图片  
+            hoverList.style.display = 'none';
+          }
+        }, 3000); // 延迟时间设置为1000毫秒（1秒） 
+      });
+    });
+    // 清除之前的延迟隐藏（如果有的话）  
+
+    image.addEventListener('mouseleave', function () {
+      // 这里不需要做任何事情，因为延迟隐藏已经在mouseover事件中设置了  
+    });
+  </script>
+
+</html>

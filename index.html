@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅赛德斯主页</title>
+    <style>
+        * {
+            /* 去除所有元素内边距外边距和列表样式化 */
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+        }
+
+        .container {
+            /* 1容器样式 */
+            width: 1200px;
+            height: 900px;
+            margin: 0 auto;
+            background: black;
+        }
+
+        .top {
+            /* 2头部样式 */
+            width: 1200px;
+            height: 200px;
+            margin: auto auto;
+            background-color: black;
+            position: relative;
+        }
+
+        .top_center {
+            /* 2-1头部中间样式 */
+            width: 140px;
+            height: 100px;
+            margin: auto auto;
+        }
+
+        .logo {
+            /* 2-1-1头部中间图片 */
+            width: 100%;
+            height: 100%;
+        }
+
+        #login {
+            /* 2-1-2头部右边登录 */
+            display: block;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+
+        #top_bottom {
+            /* 2-2头部的底部 */
+            width: 1200px;
+            height: 160px;
+            margin: 0 auto;
+            margin-top: -15px;
+            background: black
+        }
+
+        #bottom {
+            /* 3底部样式 */
+            width: 1000px;
+            height: 600px;
+            background-color: black;
+            margin: 46px auto;
+            overflow: hidden;
+            /*超出部分隐藏 */
+            position: relative;
+        }
+
+        #imglist {
+            /*3-1图片表格大小 */
+            width: 8000px;
+            height: 600px;
+        }
+
+        #imglist img {
+            /*图片大小 */
+            width: 1000px;
+            height: 600px;
+        }
+
+        #imglist li {
+            /* 所有图片左浮动 */
+            float: left;
+        }
+
+        #nav {
+            /* 头部里面的第一个ul样式 */
+            width: 1000px;
+            height: 100px;
+            background: black;
+            float: left;
+            margin: auto 12%;
+        }
+
+        #nav li {
+            /* ul里面元素样式 */
+            float: left;
+            width: 100px;
+            text-align: center;
+            margin-left: 6%;
+            height: 80px;
+            line-height: 80px;
+            position: relative;
+        }
+
+        #nav li ul {
+            /* ul li里面的ul样式 */
+            width: 1160px;
+            height: 60px;
+            display: none;
+        }
+
+        #nav li:hover ul {
+            /* 鼠标放到ul li 上面显示的ul样式 */
+            display: block;
+            width: 1000px;
+            height: 80px;
+            background: black;
+            float: left;
+            position: absolute;
+        }
+
+        li {
+            /* 列表元素里面没有任何样式 */
+            list-style-type: none;
+        }
+
+        /* 3-2左边按钮样式 */
+        .prevent {
+            background: #666;
+            width: 30px;
+            height: 40px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 45%;
+            cursor: pointer;
+            /* 鼠标手指效果 */
+        }
+
+        /* 3-3右边按钮样式 */
+        .next {
+            background: #666;
+            width: 30px;
+            height: 40px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            right: 5px;
+            top: 45%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1容器 -->
+    <div class="container">
+        <!-- 2头部 -->
+        <div class="top">
+            <!-- 2-1头部中间div -->
+            <div class="top_center">
+                <!-- 2-1-1头部中间图片 -->
+                <img src="images/logo.jpg" class="logo">
+            </div>
+            <!--  2-1-2头部右边登录  -->
+            <span id="login">
+                <a href=" login.html">登录</a>
+            </span>
+            <!-- 2-2头部的底部 -->
+            <div id="top_bottom">
+                <!-- 2-2-1底部放无序列表 -->
+                <ul id="nav">
+                    <li>探索车型
+                        <!-- 2-2-1-1探索车型里面嵌套无序列表 -->
+                        <ul style="margin-left: -90px;">
+                            <li> <a href="car.html">轿车</a></li>
+                            <li> <a href="suv.html">SUV</a></li>
+                            <li> <a href="mpv.html">MPV</a></li>
+                            <li> <a href="">纯电车型</a></li>
+                            <li> <a href="">插电式混合动力</a></li>
+                        </ul>
+                    </li>
+                    <li>官方商城
+                        <!-- 2-2-1-2官方商城里面嵌套无序列表 -->
+                        <ul style="margin-left: -240px;">
+                            <li> <a href="">购新车</a></li>
+                            <li> <a href="">看二手</a></li>
+                            <li> <a href="">找售后</a></li>
+                            <li> <a href="">买互联</a></li>
+                        </ul>
+                    </li>
+                    <li>车主服务
+                        <!-- 2-2-1-3车主服务里面嵌套无序列表 -->
+                        <ul style="margin-left: -390px;">
+                            <li> <a href="">服务政策査询</a></li>
+                            <li> <a href="">保养维修及救援</a></li>
+                            <li> <a href="">选装配件及精品</a></li>
+                            <li> <a href="">纯电车型服务</a></li>
+                        </ul>
+
+                    </li>
+                    <li>科技创新
+                        <!-- 2-2-1-4科技创新里面嵌套无序列表 -->
+                        <ul style="margin-left: -540px;">
+                            <li> <a href="">品牌天地</a></li>
+                            <li> <a href="">可持续发展</a></li>
+                            <li> <a href="">品牌互动</a></li>
+                            <li> <a href="">客户承诺</a></li>
+                            <li> <a href="">加入奔驰</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reserveDrive.html">预约试驾</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottom">
+            <!-- 3底部 -->
+            <ul id="imglist">
+                <!-- 3-1底部的无序列表放入轮播图片元素 -->
+                <li><img src="images/index1.jpg" alt=""></li>
+                <li><img src="images/index2.jpg" alt=""></li>
+                <li><img src="images/index3.jpg" alt=""></li>
+                <li><img src="images/index4.jpg" alt=""></li>
+                <li><img src="images/index5.jpg" alt=""></li>
+                <li><img src="images/index6.jpg" alt=""></li>
+                <li><img src="images/index7.jpg" alt=""></li>
+                <li><img src="images/index8.jpg" alt=""></li>
+                <li><img src="images/index1.jpg" alt=""></li>
+            </ul>
+            <div class="prevent">
+                <!-- 3-2左边按钮上一张 -->
+                < </div>
+                    <div class="next">
+                        <!-- 3-3右边按钮下一张 -->
+                        >
+                    </div>
+            </div>
+        </div>
+</body>
+<script>
+    // 获取两个元素
+    var eprevent = document.querySelector('.prevent')
+    var enext = document.querySelector('.next')
+    // 创建变量和方法
+    var left = 0;
+    var timer;
+    run();
+    function run() {
+        if (left <= -8000) {
+            left = 0;
+        }
+        imglist.style.marginLeft = left + 'px';//做滚动函数run，通过样式marginleft进行移动:
+        var n = (left % 1000 == 0) ? n = 1000 : n = 10;
+        left -= 10;
+        timer = setTimeout(run, n);
+        //10毫秒滚动一次,每次减少10px
+    }
+
+    eprevent.onclick = function () {
+        alert("向前");
+    }
+    enext.onclick = function () {
+        alert("下一张");
+    }
+</script>
+
+</html>
